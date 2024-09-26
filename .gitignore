@@ -1,2 +1,8 @@
 # Ignore the venv
 LLM_project_env/
+
+# API Keys
+API_Keys.xlsx
+
+# settings 
+settings.json
