@@ -1,18 +1,19 @@
 # **Tech News Generation Project**
 
-This project aims to scrape tech news headlines from multiple websites, process the data, and fine-tune a BART (Bidirectional and Auto-Regressive Transformers) model to automatically generate full articles in French based on the scraped headlines.
+This project aims to scrape tech news headlines from multiple websites, process the data, and fine-tune a BART (Bidirectional and Auto-Regressive Transformers) model to automatically generate full articles in English based on the scraped headlines.
 
 ## **Project Objectives**
 
-The main goal of this project is to develop an automated system that generates full tech articles in French based on headlines scraped from various news sources. To achieve this, I utilized Natural Language Processing (NLP) techniques, including model fine-tuning with datasets constructed from real-world news articles.
+The main goal of this project is to develop an automated system that generates full tech articles based on headlines scraped from the Financial Times. To achieve this, I utilized Natural Language Processing (NLP) techniques, including model fine-tuning with datasets constructed from real-world news articles.
 
 ## **Main Steps**
 
 ### 1. **Data Collection and Scraping**
 
-Data was collected by scraping tech news headlines and articles from various sources using tools such as `newspaper3k`. Key steps included:
-- **Scraping**: Automated collection of headlines and URLs from multiple tech news websites.
-- **Content Extraction**: Using the `newspaper3k` library to extract full-text content from the URLs.
+Data was collected by scraping tech news headlines and articles from various sources using tools such as `newspaper3k` and `BeautifulSoup`. Key steps included:
+- **Scraping**: Sraping the titles of premium FinancialTimes articles. We aim at generating their content using AI. 
+- **Scraping for a dataset build**: Automated collection of headlines and URLs from multiple tech news websites.
+- **Content Extraction**: Using the `newspaper3k` library to extract full-text content from the URLs. We will use this content to train our BART model so that he can reproduct the FinancialTimes articles. 
 - **Data Cleaning**: Filtering and cleaning the scraped content to ensure completeness.
 
 ### 2. **Data Preprocessing**
@@ -30,7 +31,7 @@ A pre-trained BART model was fine-tuned on the collected tech news dataset:
 
 ### 4. **Results and Conclusion**
 
-The fine-tuned model was able to generate full-length articles in French based on the headlines. The performance improved after fine-tuning, showing coherent and grammatically correct outputs for most of the test headlines.
+The fine-tuned model was able to generate full-length articles based on the headlines. The performance improved after fine-tuning, showing coherent and grammatically correct outputs for most of the test headlines.
 
 ## **Future Improvements**
 
