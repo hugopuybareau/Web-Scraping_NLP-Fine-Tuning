@@ -9,3 +9,6 @@ settings.json
 
 # models
 models/
+
+# results
+scripts/results/
