@@ -6,3 +6,6 @@ API_Keys.xlsx
 
 # settings 
 settings.json
+
+# models
+models/
