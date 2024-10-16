@@ -12,3 +12,6 @@ models/
 
 # results
 scripts/results/
+
+# articles csv
+articles/
